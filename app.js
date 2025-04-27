@@ -54,11 +54,11 @@ const formbtn = document.querySelector(".work4 button");
 formbtn.addEventListener("click", function () {
     if (formname.value === "john32" && formpass.value === "123456") {
         let ptext2 = document.createElement("p");
-        ptext2.innerHTML = "Welcome to the website, John Doe!";
+        ptext2.innerHTML = "Hush kelibsiz";
         document.body.appendChild(ptext2);
     } else {
         let ptext3 = document.createElement("p");
-        ptext3.innerHTML = "Invalid username or password!";
+        ptext3.innerHTML = "username yoki parol noto'g'ri";
         document.body.appendChild(ptext3);
     }
 });
