@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="work1">
+            <button onclick="num1w()" ondblclick="dblnum1" class="w1">
+                sanoq : <span></span>
+            </button>
+            <button onclick="del1()">del</button>
+        </div>
+
+        <br />
+        <hr />
+        <br />
+
+        <div class="work2" style="display: flex; flex-direction: column">
+            <b>John doe</b>
+            <br />
+            <button
+                onclick="seeMore()"
+                ondblclick="deltext()"
+                class="w2"
+                style="width: 100px"
+            >
+                see more
+            </button>
+        </div>
+
+        <br />
+        <hr />
+        <br />
+
+        <div class="work3">
+            <form action="">
+                <input class="fname" type="text" name="" id="" />
+                <input class="lname" type="text" name="" id="" />
+                <button>create</button>
+            </form>
+            <br />
+            <table border="1" width="600px">
+                <thead>
+                    <tr>
+                        <th>1</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody"></tbody>
+            </table>
+        </div>
+
+        <br />
+        <hr />
+        <br />
+
+        <div class="work4">
+            <form action="">
+                <input type="text" class="username" placeholder="username" />
+                <input
+                    type="password"
+                    class="password"
+                    placeholder="password"
+                />
+                <button>login</button>
+            </form>
+        </div>
+
+        <script src="./app.js"></script>
+    </body>
+</html>
