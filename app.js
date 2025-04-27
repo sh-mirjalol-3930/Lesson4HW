@@ -64,3 +64,51 @@ formbtn.addEventListener("click", function () {
 });
 
 // ------------------------------------
+
+const row = document.querySelector(".work5 .row");
+let btnstart = document.createElement("button");
+let btncenter = document.createElement("button");
+let btnend = document.createElement("button");
+let btnthin = document.createElement("button");
+let btnbold = document.createElement("button");
+let btnnormal = document.createElement("button");
+let btnitalic = document.createElement("button");
+
+row.style.display = "flex";
+row.style.gap = "10px";
+
+let ptext4 = document.createElement("p");
+ptext4.innerHTML = "Lorem ipsum";
+
+btnstart.innerHTML = "Start";
+btncenter.innerHTML = "Center";
+btnend.innerHTML = "End";
+btnthin.innerHTML = "Thin";
+btnbold.innerHTML = "Bold";
+btnnormal.innerHTML = "Normal";
+btnitalic.innerHTML = "Italic";
+row.append(btnstart, btncenter, btnend, btnthin, btnbold, btnnormal, btnitalic);
+document.body.append(ptext4);
+
+btnstart.addEventListener("click", function () {
+    ptext4.style.textAlign = "start";
+});
+btncenter.addEventListener("click", function () {
+    ptext4.style.textAlign = "center";
+});
+btnend.addEventListener("click", function () {
+    ptext4.style.textAlign = "end";
+});
+btnthin.addEventListener("click", function () {
+    ptext4.style.fontWeight = "100";
+});
+btnbold.addEventListener("click", function () {
+    ptext4.style.fontWeight = "bold";
+});
+btnnormal.addEventListener("click", function () {
+    ptext4.style.fontWeight = "normal";
+});
+btnitalic.addEventListener("click", function () {
+    ptext4.style.fontStyle = "italic";
+});
+// ------------------------------------
